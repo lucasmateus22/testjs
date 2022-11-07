@@ -1,0 +1,107 @@
+.content{
+    font-family: roboto;
+    height: 2000px;
+}
+
+
+/*#root{
+   --color-light: white;
+   --color-dark: black;
+
+   color: var(--color-foreground);
+   background-color: var(--color-background);
+}
+
+#root, #root.light{
+    --color-background:var(--color-light);
+    --color-foreground:var(--color-dark);
+}
+#root, #root.dark{
+    --color-background:var(--color-dark);
+    --color-foreground:var(--color-light);
+}
+@media (prefers-color-scheme:dark){
+    #root{
+        --color-background:var(--color-dark);
+        --color-foreground:var(--color-light);
+    }
+}---------------------------------------------------*/
+
+html body{
+    background-color: white;
+}
+html.dark body{
+    background-color: black;
+    color: white;
+}
+/*---------------------------------------------------*/
+button{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+}
+p{
+    display: block;
+}
+#btnScroll{
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    z-index: 9999;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+}
+#btnScroll:hover{
+    background-color: oldlace;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    width: 400px;
+    padding: 20px;
+    background-color: darkgray;
+    font-size: 3em;
+}
+.display{
+    height: 60px;
+    width: 400px;
+    background-color: rgb(90, 90, 90);
+    display:flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.teclas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 400px;
+    height: 300px;
+}
+.opperator{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+}
+.opperator button{
+    margin: 1px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:120px;
+    height: 70px;
+    font-size: 0.7em;
+}
