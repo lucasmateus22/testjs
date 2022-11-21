@@ -1,9 +1,19 @@
-.content{
-    font-family: roboto;
-    height: 2000px;
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
-
-
+.content{
+    display: flex;
+    flex-direction: column;
+    font-family: roboto;
+    height: 620px;
+    background-color: bisque;
+}
 /*#root{
    --color-light: white;
    --color-dark: black;
@@ -104,4 +114,45 @@ button{
     width:120px;
     height: 70px;
     font-size: 0.7em;
+}
+#theme{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.bloco{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15vw;
+    height: auto;
+    margin-top: 30px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.bloco .num{
+    width: 70%;
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 10px;
+
+}
+.butts{
+    width: 100%;
+    height: auto;
+}
+.opperator2{
+    margin: 5px;
+    width: 3vw;
+    height: 3vw;
+    font-size: 2em;
+}
+#clear{
+    margin: 5px;
+    width: 90%;
+
 }
