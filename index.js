@@ -108,6 +108,8 @@ function calc(e){
     var calculo = eval(n1+operacao+n2);
     if(!isNaN(calculo)){
         alert(calculo);
+    }else{
+        alert("invalid")
     }
 }
 /**function enviar(x){

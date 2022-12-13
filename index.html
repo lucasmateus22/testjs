@@ -13,59 +13,24 @@
     <h2 id="hour"></h2>
     <button onclick="changercolor()" id="theme">mudar</button>
     <button onclick="topFunction()" id="btnScroll" >Subir</button>
-
-    <div class="calculator">
-    <div class="display">0</div>
-    <div class="teclas">
-        
-        <div class="numbers">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>0</button>
-            <button data-action="decimal">.</button>
-            <button data-action="clear">Limpar</button>
+    <form id="frm">
+        <div class="bloco">
+            <div class="text">
+                <input type="text" id="n1" class="num" placeholder="1º número">
+                <input type="text" id="n2" class="num" placeholder="2º número">
+            </div>
+            
+            <div class="butts">
+                <input type="button" value="+" onclick="calc(this)" class="opperator2">
+                <input type="button" value="-" onclick="calc(this)" class="opperator2">
+                <input type="button" value="*" onclick="calc(this)" class="opperator2">
+                <input type="button" value="/" onclick="calc(this)" class="opperator2">
+                <input type="button" value="Limpar" onclick="limpar(this)" class="opperator2" id="clear">
+            </div>
+            
         </div>
-        <div class="other">
-           
-        </div>
-        
-        
-    </div>
-    <div class="opperator">
-        <button class="operador" data-action="add">+</button>
-        <button class="operador" data-action="subtract">-</button>
-        <button class="operador" data-action="divide">%</button>
-        <button class="operador" data-action="multiply">*</button>
-        <button class="igual" data-action="calculate">=</button>
-    </div>
-   </div>
-    </div>
-
-<form id="frm">
-    <div class="bloco">
-        <div class="text">
-            <input type="text" id="n1" class="num" placeholder="1º número">
-            <input type="text" id="n2" class="num" placeholder="2º número">
-        </div>
-        
-        <div class="butts">
-            <input type="button" value="+" onclick="calc(this)" class="opperator2">
-            <input type="button" value="-" onclick="calc(this)" class="opperator2">
-            <input type="button" value="*" onclick="calc(this)" class="opperator2">
-            <input type="button" value="/" onclick="calc(this)" class="opperator2">
-            <input type="button" value="Limpar" onclick="limpar(this)" class="opperator2" id="clear">
-        </div>
-        
-    </div>
-</form>
-
+    </form>
+</div>
    
 <script type="text/javascript" src="index.js"></script>
 </body>
