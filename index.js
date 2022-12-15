@@ -102,7 +102,6 @@ console.log(Keys.length);
  */
 function calc(e){
     var operacao = e.value;
-
     var n1 = parseFloat(document.getElementById("n1").value);
     var n2 = parseFloat(document.getElementById("n2").value);
     var calculo = eval(n1+operacao+n2);
@@ -125,6 +124,25 @@ function limpar(){
     n1.value = "";
     n2.value = "";
 }
+
+document.getElementById(Mbutton).addEventListener(click, function(){
+    var nam = document.getElementById('name').value;
+alert(document.getElementById('name').value +" seu é calculo foi:")
+console.log(nam.value)
+});
+/**
+ function send(){
+
+    var f = document.getElementById("name");
+    var txt = f.txtnome;
+    return alert( + " seu calculo deu");
+}
+
+
+
+*/
+
+
 /**
  * Formatar data
 var myvardate = setInterval(myTime, 1000);
