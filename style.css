@@ -1,3 +1,10 @@
+:root{
+    --varBlack1:#252525;
+    --varBlack2:black;
+    --varGrey1:rgb(83, 83, 83);
+    --varGrey2: rgb(102, 102, 102);
+    --varPress:rgb(66, 66, 66);
+}
 body{
     display: flex;
     justify-content: center;
@@ -8,9 +15,13 @@ body{
 }
 .content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     font-family: roboto;
-    height: 620px;
+    height: 410px;
+    width: 100vw;
+    margin-top: 50px;
 }
 /*#root{
    --color-light: white;
@@ -39,7 +50,7 @@ html body{
     background-color: rgb(151, 151, 151);
 }
 html.dark body{
-    background-color: black;
+    background-color: #252525;
     color: white;
 }
 /*---------------------------------------------------*/
@@ -53,15 +64,17 @@ p{
     right: 30px;
     z-index: 9999;
     outline: none;
-    background-color: red;
+    background-color: rgb(102, 102, 102);
     color: white;
     cursor: pointer;
     padding: 15px;
+    border: 1px solid;
+    border-radius: 20px;
 }
 #btnScroll:hover{
-    background-color: oldlace;
+    background-color: rgb(66, 58, 58);
 }
-button{
+.button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +86,25 @@ button{
     position: fixed;
     left: 20px;
     top: 20px;
+    width: 70px;
+    height: 45px;
+    background-color: var(--varGrey2);
+    border: 1px solid white;
+    box-shadow: 0 0 20px white;
+}
+#theme:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.data-hora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 200px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .bloco{
     display: flex;
@@ -81,8 +113,10 @@ button{
     width: 15vw;
     height: auto;
     padding: 10px;
-    margin-top: 30px;
-    background-color: grey;
+    
+}
+div{
+    background-color: var(--varGrey2);
     border: 1px solid white;
     box-shadow: 0 0 20px white;
 }
@@ -132,4 +166,80 @@ button{
 #clear{
     margin: 5px;
     width: 90%;
+}
+.msg{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width:308px;
+    height: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: var(--varGrey2);
+}
+.msg input{
+    background-color: black;
+    caret-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    border:1px solid white;
+    padding: 4px 7px;
+}
+.msg input::selection{
+    background-color: rgb(218, 44, 44);
+    color: white;
+}
+.msg button{
+    background-color: var(--varGrey1);
+    border-radius: 40px;
+    border: none;
+    color: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgb(107, 107, 107);
+}
+.msg button:hover{
+    background-color: var(--varPress);
+}
+/*-----------------------------------------------------*/
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper h2{
+    font-size: 2em;
+    color: var(--varBlack2);
+}
+.wrapper span, p{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: aqua;
+}
+.buttonClock{
+    display: flex;
+    flex-direction: row;
+}
+.wrapper button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    transition: .5s;
+    margin: 10px;
+}
+.wrapper button:hover{
+    box-shadow: 0 0 5px aqua,
+    0 0 10px aqua,
+    0 0 25px aqua;
 }

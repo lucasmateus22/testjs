@@ -8,11 +8,14 @@
     <title>Document</title>
 </head>
 <body id="root">
-    <h2 id="data"></h2>
-    <div class="content">
-    <h2 id="hour"></h2>
-    <button onclick="changercolor()" id="theme">mudar</button>
-    <button onclick="topFunction()" id="btnScroll" >Subir</button>
+    <section class="content">
+        <div class="data-hora">
+            <span id="data"></span>
+            <span id="hora"></span>
+        </div>
+    
+<button onclick="changercolor()" id="theme">mudar</button>
+<button onclick="topFunction()" id="btnScroll" >Subir</button>
     <form id="frm">
         <div class="bloco">
             <div class="text">
@@ -27,17 +30,35 @@
                 <input type="button" value="/" onclick="calc(this)" class="opperator2">
                 <input type="button" value="Limpar" onclick="limpar(this)" class="opperator2" id="clear">
             </div>
-            
         </div>
     </form>
-
     <div class="msg">
+        <label for="">Testando.</label>
+        <br>
+        <label for="">Seu nome:</label>
         <input type="text" id="name" value="">
-        <button onclick="alert(document.getElementById('name').value + ' seu é calculo foi: ')" id="Mbutton">Enviar</button>
+        <button onclick="alert(document.getElementById('name').value + ' seu é calculo foi com: ' + document.getElementById('n1').value +' e ' + document.getElementById('n2').value)" id="Mbutton">Enviar</button>
     </div>
-</div>
-   
+    <div class="wrapper">
+        <h2>cronometro usando javascript</h2>
+        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+        <div class="buttonClock">
+            <button id="button-start">Start</button>
+            <button id="button-stop">Stop</button>
+            <button id="button-reset">Reset</button>
+        </div>
+    </div>
+</section>
 <script type="text/javascript" src="index.js"></script>
+<script src="./buttonScroll.js"></script>
+<script src="./calcSimples.js"></script>
+<script src="./changerColor.js"></script>
+<script src="./cronometro.js"></script>
+<script src="./formData.js"></script>
+<script src="./geoLocation.js"></script>
+<script src="./Hora.js"></script>
+<script src="./getName.js"></script>
+
 </body>
 
 </html>
